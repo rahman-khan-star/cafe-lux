@@ -5,7 +5,9 @@ import { orderSchema } from "@/lib/validators";
 import { db, schema } from "@/lib/db";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", { apiVersion: "2026-06-24.dahlia" });
+function getStripe() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: "2026-06-24.dahlia" });
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -20,7 +22,7 @@ export async function POST(req: NextRequest) {
     const d = validation.data;
 
     if (d.paymentMethod === "stripe") {
-      const paymentIntent = await stripe.paymentIntents.create({
+      const paymentIntent = await getStripe().paymentIntents.create({
         amount: Math.round(d.total * 100),
         currency: "usd",
         metadata: { orderId, userId: session.user.id },
