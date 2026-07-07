@@ -38,9 +38,7 @@ export default function GalleryPreview() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               onClick={() => setSelected(img.src)}
-              className={`relative overflow-hidden group ${
-                i === 0 ? "col-span-2 row-span-2" : ""
-              }`}
+              className="relative overflow-hidden group"
             >
               <div className="relative w-full h-48 md:h-64">
                 <Image

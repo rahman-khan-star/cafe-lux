@@ -355,9 +355,8 @@ export const galleryImages: GalleryImage[] = [
   { id: "g7", src: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80", alt: "Restaurant interior at night", category: "interior" },
   { id: "g8", src: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&q=80", alt: "Bar area", category: "interior" },
   { id: "g9", src: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80", alt: "Cozy corner seating", category: "interior" },
-  { id: "g10", src: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80", alt: "Outdoor garden dining", category: "outdoor" },
-  { id: "g11", src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80", alt: "Morning coffee setup", category: "drinks" },
-  { id: "g12", src: "https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&q=80", alt: "Fresh pastries display", category: "food" },
+  { id: "g10", src: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80", alt: "Artisan coffee preparation", category: "drinks" },
+  { id: "g11", src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80", alt: "Elegant dining area", category: "interior" },
 ];
 
 export const coupons: Coupon[] = [
