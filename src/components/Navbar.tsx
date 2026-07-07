@@ -38,9 +38,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-[#c8a97e] rounded-lg flex items-center justify-center group-hover:bg-[#b8945c] transition-colors">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
             <span
               className={`font-bold text-xl tracking-tight transition-colors ${
                 scrolled ? "text-gray-900" : "text-gray-900"

@@ -12,9 +12,6 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-5">
-              <div className="w-10 h-10 bg-[#c8a97e] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
               <span className="font-bold text-xl">
                 Café<span className="text-[#c8a97e]">Lux</span>
               </span>
@@ -26,21 +23,21 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <a
                 href="#"
-                className="w-9 h-9 bg-white/10 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-[#c8a97e]/20 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-colors"
               >
-                <Camera className="w-4 h-4" />
+                <Camera className="w-4 h-4 text-[#c8a97e] hover:text-white" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 bg-white/10 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-[#c8a97e]/20 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-colors"
               >
-                <Globe className="w-4 h-4" />
+                <Globe className="w-4 h-4 text-[#c8a97e] hover:text-white" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 bg-white/10 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-[#c8a97e]/20 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-colors"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4 text-[#c8a97e] hover:text-white" />
               </a>
             </div>
           </div>

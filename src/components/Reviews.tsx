@@ -33,10 +33,10 @@ export default function Reviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="relative bg-[#faf9f7] p-6 md:p-8 group hover:bg-[#c8a97e] transition-colors duration-300"
+              className="relative bg-[#c8a97e] p-6 md:p-8 group hover:bg-[#b8945c] transition-colors duration-300"
             >
-              <Quote className="w-8 h-8 text-[#c8a97e]/30 group-hover:text-white/30 mb-4 transition-colors" />
-              <p className="text-gray-600 group-hover:text-white/80 text-sm leading-relaxed mb-6 transition-colors">
+              <Quote className="w-8 h-8 text-white/30 mb-4" />
+              <p className="text-white/80 text-sm leading-relaxed mb-6">
                 &ldquo;{review.comment}&rdquo;
               </p>
               <div className="flex items-center gap-1 mb-4">
@@ -45,9 +45,9 @@ export default function Reviews() {
                     key={j}
                     className={`w-4 h-4 ${
                       j < review.rating
-                        ? "fill-[#c8a97e] text-[#c8a97e] group-hover:fill-white group-hover:text-white"
-                        : "text-gray-300"
-                    } transition-colors`}
+                        ? "fill-white text-white"
+                        : "text-white/30"
+                    }`}
                   />
                 ))}
               </div>
@@ -55,13 +55,13 @@ export default function Reviews() {
                 <img
                   src={review.avatar}
                   alt={review.name}
-                  className="w-10 h-10 rounded-full object-cover ring-2 ring-white/50"
+                  className="w-10 h-10 rounded-full object-cover ring-2 ring-white/30"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900 group-hover:text-white text-sm transition-colors">
+                  <p className="font-semibold text-white text-sm">
                     {review.name}
                   </p>
-                  <p className="text-xs text-gray-400 group-hover:text-white/60 transition-colors">
+                  <p className="text-xs text-white/60">
                     {review.date}
                   </p>
                 </div>

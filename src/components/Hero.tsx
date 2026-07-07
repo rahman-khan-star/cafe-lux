@@ -18,10 +18,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Decorative corner accents */}
-      <div className="absolute top-12 left-12 w-24 h-24 border-t-2 border-l-2 border-[#c8a97e]/50" />
-      <div className="absolute top-12 right-12 w-24 h-24 border-t-2 border-r-2 border-[#c8a97e]/50" />
-      <div className="absolute bottom-12 left-12 w-24 h-24 border-b-2 border-l-2 border-[#c8a97e]/50" />
-      <div className="absolute bottom-12 right-12 w-24 h-24 border-b-2 border-r-2 border-[#c8a97e]/50" />
+      <div className="absolute top-12 left-12 w-24 h-24 border-t-2 border-l-2 border-[#c8a97e]/50 pointer-events-none" />
+      <div className="absolute top-12 right-12 w-24 h-24 border-t-2 border-r-2 border-[#c8a97e]/50 pointer-events-none" />
+      <div className="absolute bottom-12 left-12 w-24 h-24 border-b-2 border-l-2 border-[#c8a97e]/50 pointer-events-none" />
+      <div className="absolute bottom-12 right-12 w-24 h-24 border-b-2 border-r-2 border-[#c8a97e]/50 pointer-events-none" />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <motion.div

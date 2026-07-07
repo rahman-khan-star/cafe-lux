@@ -335,6 +335,14 @@ export const reviews: Review[] = [
     comment: "The Tiramisu transported me straight to Rome. The ambiance is elegant yet welcoming. This is now my go-to spot for dessert and coffee.",
     date: "1 month ago",
   },
+  {
+    id: "r6",
+    name: "Daniel Kim",
+    avatar: "https://i.pravatar.cc/100?img=12",
+    rating: 5,
+    comment: "Best brunch spot in the city! The Avocado Toast is perfectly seasoned and the Cold Brew is incredibly smooth. Will definitely be back.",
+    date: "3 days ago",
+  },
 ];
 
 export const galleryImages: GalleryImage[] = [
@@ -346,6 +354,10 @@ export const galleryImages: GalleryImage[] = [
   { id: "g6", src: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80", alt: "Latte art", category: "drinks" },
   { id: "g7", src: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80", alt: "Restaurant interior at night", category: "interior" },
   { id: "g8", src: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&q=80", alt: "Bar area", category: "interior" },
+  { id: "g9", src: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80", alt: "Cozy corner seating", category: "interior" },
+  { id: "g10", src: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80", alt: "Outdoor garden dining", category: "outdoor" },
+  { id: "g11", src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80", alt: "Morning coffee setup", category: "drinks" },
+  { id: "g12", src: "https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&q=80", alt: "Fresh pastries display", category: "food" },
 ];
 
 export const coupons: Coupon[] = [
