@@ -45,9 +45,9 @@ export default function Navbar() {
               <path d="M6 18C6 16.8954 6.89543 16 8 16H24C25.1046 16 26 16.8954 26 18V20C26 24.4183 22.4183 28 18 28C13.5817 28 10 24.4183 10 20V18H6Z" fill="#8B5E3C"/>
               <path d="M4 20C4 20 5 19 8 19C11 19 12 20 12 20" stroke="#8B5E3C" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
             </svg>
-            <span className={`font-semibold text-lg tracking-wide transition-colors duration-300 ${
+            <span className={`font-semibold text-lg tracking-wide transition-all duration-300 ${
               scrolled ? "text-white" : "text-white"
-            }`}>
+            } hover:text-[#c8a97e] hover:drop-shadow-[0_0_8px_rgba(200,169,126,0.5)]`}>
               The Club <span className="text-[#c8a97e] font-bold">Cafe</span>
             </span>
           </Link>
@@ -60,10 +60,10 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-4 py-2 text-[13px] font-medium tracking-[0.12em] uppercase transition-colors duration-300 ${
+                  className={`relative px-4 py-2 text-[13px] font-medium tracking-[0.12em] uppercase transition-all duration-300 ${
                     isActive
-                      ? "text-[#c8a97e]"
-                      : "text-white/70 hover:text-white"
+                      ? "text-[#c8a97e] drop-shadow-[0_0_8px_rgba(200,169,126,0.5)]"
+                      : "text-white/70 hover:text-[#c8a97e] hover:drop-shadow-[0_0_8px_rgba(200,169,126,0.4)]"
                   }`}
                 >
                   {link.label}
@@ -81,16 +81,16 @@ export default function Navbar() {
 
           {/* Right Icons */}
           <div className="flex items-center gap-1">
-            <button className={`p-2.5 rounded-full transition-colors duration-300 ${
-              scrolled ? "text-white/70 hover:text-white hover:bg-white/10" : "text-white/70 hover:text-white hover:bg-white/10"
+            <button className={`p-2.5 rounded-full transition-all duration-300 ${
+              scrolled ? "text-white/70 hover:text-[#c8a97e] hover:bg-[#c8a97e]/10 hover:shadow-[0_0_12px_rgba(200,169,126,0.35)]" : "text-white/70 hover:text-[#c8a97e] hover:bg-[#c8a97e]/10 hover:shadow-[0_0_12px_rgba(200,169,126,0.35)]"
             }`}>
               <Search className="w-[18px] h-[18px]" />
             </button>
 
             <Link
               href="/cart"
-              className={`relative p-2.5 rounded-full transition-colors duration-300 ${
-                scrolled ? "text-white/70 hover:text-white hover:bg-white/10" : "text-white/70 hover:text-white hover:bg-white/10"
+              className={`relative p-2.5 rounded-full transition-all duration-300 ${
+                scrolled ? "text-white/70 hover:text-[#c8a97e] hover:bg-[#c8a97e]/10 hover:shadow-[0_0_12px_rgba(200,169,126,0.35)]" : "text-white/70 hover:text-[#c8a97e] hover:bg-[#c8a97e]/10 hover:shadow-[0_0_12px_rgba(200,169,126,0.35)]"
               }`}
             >
               <ShoppingCart className="w-[18px] h-[18px]" />
