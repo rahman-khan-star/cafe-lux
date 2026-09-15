@@ -9,8 +9,8 @@ import { foods as initialFoods, categories as initialCategories, coupons as init
 const MOCK_ADMIN: User = {
   id: "admin1",
   name: "Admin User",
-  email: "admin@cafelux.com",
-  phone: "+1 (555) 000-0001",
+  email: "admin@theclubcafe.com",
+  phone: "+92 300 000 0001",
   avatar: "https://i.pravatar.cc/100?img=12",
   role: "admin",
   createdAt: "2024-01-01",
@@ -19,16 +19,16 @@ const MOCK_ADMIN: User = {
 const MOCK_USER: User = {
   id: "u1",
   name: "Alex Johnson",
-  email: "alex@example.com",
-  phone: "+1 (555) 987-6543",
+  email: "alex@theclubcafe.com",
+  phone: "+92 300 987 6543",
   avatar: "https://i.pravatar.cc/100?img=11",
   role: "customer",
   createdAt: "2024-03-15",
 };
 
 const MOCK_ADDRESSES: Address[] = [
-  { id: "a1", label: "Home", street: "456 Oak Avenue, Apt 2B", city: "New York", state: "NY", zip: "10001", isDefault: true },
-  { id: "a2", label: "Work", street: "789 Madison Avenue, Floor 12", city: "New York", state: "NY", zip: "10065", isDefault: false },
+  { id: "a1", label: "Home", street: "123 Main Street, Peshawar", city: "Peshawar", state: "Khyber Pakhtunkhwa", zip: "25000", isDefault: true },
+  { id: "a2", label: "Work", street: "456 Commercial Area, Peshawar", city: "Peshawar", state: "Khyber Pakhtunkhwa", zip: "25000", isDefault: false },
 ];
 
 const MOCK_ORDERS: Order[] = [
@@ -65,20 +65,20 @@ const MOCK_ORDERS: Order[] = [
 ];
 
 const MOCK_CUSTOMERS: User[] = [
-  { id: "u1", name: "Alex Johnson", email: "alex@example.com", phone: "+1 (555) 987-6543", avatar: "https://i.pravatar.cc/100?img=11", role: "customer", createdAt: "2024-03-15" },
-  { id: "u2", name: "Sarah Williams", email: "sarah@example.com", phone: "+1 (555) 234-5678", avatar: "https://i.pravatar.cc/100?img=1", role: "customer", createdAt: "2024-05-20" },
-  { id: "u3", name: "Michael Brown", email: "michael@example.com", phone: "+1 (555) 345-6789", avatar: "https://i.pravatar.cc/100?img=3", role: "customer", createdAt: "2024-07-10" },
-  { id: "u4", name: "Emily Davis", email: "emily@example.com", phone: "+1 (555) 456-7890", avatar: "https://i.pravatar.cc/100?img=5", role: "customer", createdAt: "2024-09-01" },
-  { id: "u5", name: "James Wilson", email: "james@example.com", phone: "+1 (555) 567-8901", avatar: "https://i.pravatar.cc/100?img=8", role: "customer", createdAt: "2024-11-15" },
-  { id: "u6", name: "Priya Patel", email: "priya@example.com", phone: "+1 (555) 678-9012", avatar: "https://i.pravatar.cc/100?img=9", role: "customer", createdAt: "2025-01-02" },
+  { id: "u1", name: "Alex Johnson", email: "alex@example.com", phone: "+92 300 987 6543", avatar: "https://i.pravatar.cc/100?img=11", role: "customer", createdAt: "2024-03-15" },
+  { id: "u2", name: "Sarah Williams", email: "sarah@example.com", phone: "+92 300 234 5678", avatar: "https://i.pravatar.cc/100?img=1", role: "customer", createdAt: "2024-05-20" },
+  { id: "u3", name: "Michael Brown", email: "michael@example.com", phone: "+92 300 345 6789", avatar: "https://i.pravatar.cc/100?img=3", role: "customer", createdAt: "2024-07-10" },
+  { id: "u4", name: "Emily Davis", email: "emily@example.com", phone: "+92 300 456 7890", avatar: "https://i.pravatar.cc/100?img=5", role: "customer", createdAt: "2024-09-01" },
+  { id: "u5", name: "James Wilson", email: "james@example.com", phone: "+92 300 567 8901", avatar: "https://i.pravatar.cc/100?img=8", role: "customer", createdAt: "2024-11-15" },
+  { id: "u6", name: "Priya Patel", email: "priya@example.com", phone: "+92 300 678 9012", avatar: "https://i.pravatar.cc/100?img=9", role: "customer", createdAt: "2025-01-02" },
 ];
 
 const MOCK_RESERVATIONS: Reservation[] = [
-  { id: "res1", customerName: "Alex Johnson", customerEmail: "alex@example.com", customerPhone: "+1 (555) 987-6543", date: "2025-01-10", time: "19:00", guests: 4, status: "confirmed", notes: "Window seat preferred", createdAt: "2025-01-05T10:00:00Z" },
-  { id: "res2", customerName: "Sarah Williams", customerEmail: "sarah@example.com", customerPhone: "+1 (555) 234-5678", date: "2025-01-10", time: "20:00", guests: 2, status: "pending", createdAt: "2025-01-06T14:30:00Z" },
-  { id: "res3", customerName: "Michael Brown", customerEmail: "michael@example.com", customerPhone: "+1 (555) 345-6789", date: "2025-01-11", time: "18:30", guests: 6, status: "confirmed", notes: "Birthday celebration", createdAt: "2025-01-07T09:15:00Z" },
-  { id: "res4", customerName: "Emily Davis", customerEmail: "emily@example.com", customerPhone: "+1 (555) 456-7890", date: "2025-01-09", time: "12:00", guests: 3, status: "completed", createdAt: "2025-01-03T11:00:00Z" },
-  { id: "res5", customerName: "James Wilson", customerEmail: "james@example.com", customerPhone: "+1 (555) 567-8901", date: "2025-01-12", time: "13:00", guests: 2, status: "pending", createdAt: "2025-01-07T16:45:00Z" },
+  { id: "res1", customerName: "Alex Johnson", customerEmail: "alex@example.com", customerPhone: "+92 300 987 6543", date: "2025-01-10", time: "19:00", guests: 4, status: "confirmed", notes: "Window seat preferred", createdAt: "2025-01-05T10:00:00Z" },
+  { id: "res2", customerName: "Sarah Williams", customerEmail: "sarah@example.com", customerPhone: "+92 300 234 5678", date: "2025-01-10", time: "20:00", guests: 2, status: "pending", createdAt: "2025-01-06T14:30:00Z" },
+  { id: "res3", customerName: "Michael Brown", customerEmail: "michael@example.com", customerPhone: "+92 300 345 6789", date: "2025-01-11", time: "18:30", guests: 6, status: "confirmed", notes: "Birthday celebration", createdAt: "2025-01-07T09:15:00Z" },
+  { id: "res4", customerName: "Emily Davis", customerEmail: "emily@example.com", customerPhone: "+92 300 456 7890", date: "2025-01-09", time: "12:00", guests: 3, status: "completed", createdAt: "2025-01-03T11:00:00Z" },
+  { id: "res5", customerName: "James Wilson", customerEmail: "james@example.com", customerPhone: "+92 300 567 8901", date: "2025-01-12", time: "13:00", guests: 2, status: "pending", createdAt: "2025-01-07T16:45:00Z" },
 ];
 
 interface AuthContextType {
@@ -141,11 +141,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsLoading(true);
     await new Promise((r) => setTimeout(r, 800));
     setIsLoading(false);
-    if (email === "admin@cafelux.com" && password === "admin123") {
+    if (email === "admin@theclubcafe.com" && password === "admin123") {
       setUser(MOCK_ADMIN);
       return { success: true };
     }
-    if (email === "alex@example.com" && password === "password") {
+    if (email === "alex@theclubcafe.com" && password === "password") {
       setUser(MOCK_USER);
       return { success: true };
     }

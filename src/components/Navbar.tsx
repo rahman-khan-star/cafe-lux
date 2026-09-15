@@ -28,22 +28,18 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-black/5"
-          : "bg-white/80 backdrop-blur-sm"
+          ? "bg-black/40 backdrop-blur-md border-b border-white/10"
+          : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <span
-              className={`font-bold text-xl tracking-tight transition-colors ${
-                scrolled ? "text-gray-900" : "text-gray-900"
-              }`}
-            >
-              Café<span className="text-[#c8a97e]">Lux</span>
+          <Link href="/" className="flex items-center gap-2">
+            <span className="font-bold text-lg tracking-tight transition-colors">
+              The Club<span className="text-[#c8a97e]">Cafe</span>
             </span>
           </Link>
 
@@ -54,7 +50,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-[#c8a97e] ${
-                  scrolled ? "text-gray-700" : "text-gray-700"
+                  scrolled ? "text-gray-200" : "text-gray-300"
                 }`}
               >
                 {link.label}
@@ -66,8 +62,8 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/cart"
-              className={`relative p-2 rounded-full transition-colors hover:bg-gray-100 ${
-                scrolled ? "text-gray-700" : "text-gray-700"
+              className={`relative p-2 rounded-full transition-colors hover:bg-black/20 ${
+                scrolled ? "text-gray-200" : "text-gray-300"
               }`}
             >
               <ShoppingCart className="w-5 h-5" />
@@ -83,8 +79,8 @@ export default function Navbar() {
             </Link>
 
             <button
-              className={`p-2 rounded-full transition-colors hover:bg-gray-100 ${
-                scrolled ? "text-gray-700" : "text-gray-700"
+              className={`p-2 rounded-full transition-colors hover:bg-black/20 ${
+                scrolled ? "text-gray-200" : "text-gray-300"
               }`}
             >
               <User className="w-5 h-5" />
@@ -93,8 +89,8 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className={`lg:hidden p-2 rounded-full transition-colors hover:bg-gray-100 ${
-                scrolled ? "text-gray-700" : "text-gray-700"
+              className={`lg:hidden p-2 rounded-full transition-colors hover:bg-black/20 ${
+                scrolled ? "text-gray-200" : "text-gray-300"
               }`}
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -110,7 +106,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-100"
+            className="lg:hidden bg-black/50 backdrop-blur-md border-t border-white/10"
           >
             <div className="px-4 py-6 space-y-3">
               {navLinks.map((link) => (
@@ -118,7 +114,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="block text-gray-700 font-medium text-sm uppercase tracking-wide py-2 hover:text-[#c8a97e] transition-colors"
+                  className="block text-gray-200 font-medium text-sm uppercase tracking-wide py-2 hover:text-[#c8a97e] transition-colors"
                 >
                   {link.label}
                 </Link>

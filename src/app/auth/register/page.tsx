@@ -44,10 +44,10 @@ export default function RegisterPage() {
               <div className="w-10 h-10 bg-[#c8a97e] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
-              <span className="font-bold text-xl text-gray-900">Café<span className="text-[#c8a97e]">Lux</span></span>
+              <span className="font-bold text-xl text-gray-900">The Club<span className="text-[#c8a97e]">Cafe</span></span>
             </Link>
             <h1 className="text-3xl font-bold text-gray-900">Create Account</h1>
-            <p className="text-gray-500 mt-2">Join Café Lux today</p>
+            <p className="text-gray-500 mt-2">Join The Club Cafe today</p>
           </div>
 
           <form onSubmit={handleSubmit} className="bg-white p-8 shadow-sm space-y-5">

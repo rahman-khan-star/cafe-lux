@@ -381,10 +381,10 @@ export default function CheckoutPage() {
                       {deliveryMethod === "pickup" ? (
                         <div className="bg-gray-50 border border-gray-200 p-6 text-center">
                           <Store className="w-12 h-12 text-[#c8a97e] mx-auto mb-3" />
-                          <p className="font-semibold text-gray-900">Pickup at Café Lux</p>
-                          <p className="text-sm text-gray-500 mt-1">
-                            123 Gourmet Street, Culinary District, New York, NY 10001
-                          </p>
+<p className="font-semibold text-gray-900">Pickup at The Club Cafe</p>
+                           <p className="text-sm text-gray-500 mt-1">
+                             Peshawar, Khyber Pakhtunkhwa
+                           </p>
                           <p className="text-xs text-gray-400 mt-2">Ready in approximately 20-30 minutes</p>
                         </div>
                       ) : (
@@ -470,7 +470,7 @@ export default function CheckoutPage() {
                                   value={newAddress.city}
                                   onChange={(e) => setNewAddress({ ...newAddress, city: e.target.value })}
                                   error={errors.city}
-                                  placeholder="New York"
+                                  placeholder="City"
                                 />
                                 <Input
                                   label="State"
@@ -484,7 +484,7 @@ export default function CheckoutPage() {
                                   value={newAddress.zip}
                                   onChange={(e) => setNewAddress({ ...newAddress, zip: e.target.value })}
                                   error={errors.zip}
-                                  placeholder="10001"
+                                  placeholder="Zip Code"
                                 />
                               </div>
                             </div>
@@ -646,7 +646,7 @@ export default function CheckoutPage() {
                         </h3>
                         <div className="bg-gray-50 p-4 text-sm text-gray-700">
                           {deliveryMethod === "pickup" ? (
-                            <p>Pickup at Café Lux &mdash; 123 Gourmet Street, New York, NY 10001</p>
+                            <p>Pickup at The Club Cafe &mdash; Peshawar, Khyber Pakhtunkhwa</p>
                           ) : activeAddress ? (
                             <p>{activeAddress.street}, {activeAddress.city}, {activeAddress.state} {activeAddress.zip}</p>
                           ) : (

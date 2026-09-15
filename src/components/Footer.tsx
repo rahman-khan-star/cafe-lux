@@ -13,12 +13,11 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-5">
               <span className="font-bold text-xl">
-                Café<span className="text-[#c8a97e]">Lux</span>
+                The Club<span className="text-[#c8a97e]">Cafe</span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Premium dining experience since 2018. Handcrafted cuisine,
-              artisanal coffee, and unforgettable moments.
+              Premium café experience in Peshawar. Good coffee, better company.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -98,12 +97,12 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#c8a97e] mt-0.5 shrink-0" />
                 <span>
-                  123 Gourmet Street, Culinary District, New York, NY 10001
+                  Peshawar, Khyber Pakhtunkhwa
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#c8a97e] shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+92 300 1234567</span>
               </li>
             </ul>
           </div>
@@ -114,7 +113,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-xs">
-            &copy; {new Date().getFullYear()} Café Lux. All rights reserved.
+            &copy; {new Date().getFullYear()} The Club Cafe. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-xs text-gray-500">
             <a href="#" className="hover:text-[#c8a97e] transition-colors">

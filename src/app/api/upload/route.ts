@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
     const result = await new Promise<{ secure_url: string }>((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
-        { folder: "cafelux", resource_type: "auto" },
+        { folder: "theclubcafe", resource_type: "auto" },
         (error, result) => {
           if (error) reject(error);
           else resolve(result as { secure_url: string });

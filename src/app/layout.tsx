@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Café Lux | Premium Dining Experience",
-  description:
-    "Indulge in handcrafted cuisine made with the finest ingredients. From artisanal coffee to gourmet dishes — every bite is an experience.",
+title: "The Club Cafe | Peshawar",
+    description:
+      "Good coffee. Better company. Peshawar's café experience in a warm, modern and welcoming setting.",
   keywords: [
     "cafe",
     "restaurant",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "desserts",
   ],
   openGraph: {
-    title: "Café Lux | Premium Dining Experience",
+title: "The Club Cafe | Peshawar",
     description:
       "Indulge in handcrafted cuisine made with the finest ingredients.",
     type: "website",
