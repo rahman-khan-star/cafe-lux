@@ -37,7 +37,7 @@ export const foods: Food[] = [
     prepTime: 7,
     calories: 250,
     ingredients: ["Espresso", "Steamed Milk", "Vanilla Syrup", "Caramel Sauce"],
-    image: "/CFA0.jpg",
+    image: "/CAFA14.jpg",
     category: "coffee",
     featured: true,
     badge: "Chef's Pick",
