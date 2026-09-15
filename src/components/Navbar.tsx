@@ -41,9 +41,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 6C8 4.89543 8.89543 4 10 4H22C23.1046 4 24 4.89543 24 6V8C24 12.4183 20.4183 16 16 16C11.5817 16 8 12.4183 8 8V6Z" fill="#c8a97e" opacity="0.9"/>
-              <path d="M6 18C6 16.8954 6.89543 16 8 16H24C25.1046 16 26 16.8954 26 18V20C26 24.4183 22.4183 28 18 28C13.5817 28 10 24.4183 10 20V18H6Z" fill="#c8a97e"/>
-              <path d="M4 20C4 20 5 19 8 19C11 19 12 20 12 20" stroke="#c8a97e" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
+              <path d="M8 6C8 4.89543 8.89543 4 10 4H22C23.1046 4 24 4.89543 24 6V8C24 12.4183 20.4183 16 16 16C11.5817 16 8 12.4183 8 8V6Z" fill="#8B5E3C" opacity="0.9"/>
+              <path d="M6 18C6 16.8954 6.89543 16 8 16H24C25.1046 16 26 16.8954 26 18V20C26 24.4183 22.4183 28 18 28C13.5817 28 10 24.4183 10 20V18H6Z" fill="#8B5E3C"/>
+              <path d="M4 20C4 20 5 19 8 19C11 19 12 20 12 20" stroke="#8B5E3C" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
             </svg>
             <span className={`font-semibold text-lg tracking-wide transition-colors duration-300 ${
               scrolled ? "text-white" : "text-white"
