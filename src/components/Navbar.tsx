@@ -38,7 +38,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="font-bold text-lg tracking-tight transition-colors">
+            <span className={`font-bold text-lg tracking-tight transition-colors ${
+              scrolled ? "text-gray-900" : "text-white"
+            }`}>
               The Club<span className="text-[#c8a97e]">Cafe</span>
             </span>
           </Link>
