@@ -1,14 +1,18 @@
 import { NextRequest } from "next/server";
 import { apiError, apiSuccess } from "@/lib/api-utils";
 import { auth } from "@/lib/auth";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
   try {
     const session = await auth.api.getSession({ headers: req.headers });
     if (!session) return apiError("Unauthorized", 401);
+
+    if (!process.env.RESEND_API_KEY) {
+      return apiError("Email service not configured");
+    }
+
+    const { Resend } = await import("resend");
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const body = await req.json();
     const { to, subject, html } = body;
