@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* Hero Content — Left-aligned editorial composition */}
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-10">
-        <div className="max-w-[560px] lg:max-w-[620px] ml-[8%] lg:ml-[10%]">
+        <div className="max-w-[460px] lg:max-w-[520px] ml-[5%] lg:ml-[4%]">
           {/* Eyebrow text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
-            className="font-[family-name:var(--font-playfair)] text-[clamp(2.5rem,5.5vw,5.125rem)] font-medium leading-[1.08] tracking-[-0.01em] text-[#f5f0e8] mb-5 lg:mb-6"
+            className="font-[family-name:var(--font-playfair)] text-[clamp(2.25rem,4.5vw,4.5rem)] font-medium leading-[1.08] tracking-[-0.01em] text-[#f5f0e8] mb-5 lg:mb-6"
           >
             Good Coffee.
             <br />
