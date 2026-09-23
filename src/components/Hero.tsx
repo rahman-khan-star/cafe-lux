@@ -90,6 +90,7 @@ export default function Hero() {
               Visit Us
             </Link>
           </motion.div>
+          </div>
         </div>
       </div>
 
