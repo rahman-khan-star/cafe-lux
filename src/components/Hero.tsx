@@ -2,17 +2,21 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[640px] max-h-[1000px] lg:h-[100vh] flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image — responsive WebP with priority loading */}
       <div className="absolute inset-0">
-        <img
-          src="/CAFABACK.png"
+        <Image
+          src="/hero-desktop.webp"
           alt="The Club Cafe exterior"
-          className="w-full h-full object-cover object-center"
-          style={{ objectPosition: "center 40%" }}
+          fill
+          priority
+          quality={80}
+          sizes="(max-width: 768px) 900px, 1920px"
+          style={{ objectFit: "cover", objectPosition: "center 40%" }}
         />
       </div>
 
